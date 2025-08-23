@@ -501,7 +501,7 @@ If [Server_Loadouts](#Server_Loadouts) is also enabled, inventory stations will 
 
 ### [Weapon_XArena](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Weapon_XArena.zip)
 <a name="Weapon_XArena"></a>
-<sup>*Requires [Support_XStateSys](#Support_XStateSys).*</sup>\
+<sup>*Requires [Support_XStateSys](#Support_XStateSys), Support_Slash_Trails and [Sound_Blockland](https://blockland.online/rtb/addons/41/blockland-sounds).*</sup>\
 A very incomplete "pack" of fantasy melee weapons that never went anywhere.\
 Includes two weapons, the Scythe and Crystal Sword.
 
@@ -509,3 +509,5 @@ Each weapon has 4 attacks (LMB tap, LMB hold, E, R) and can block (hold RMB)\
 A well timed block will parry incoming hits, staggering the target.\
 Holding block reduces incoming damage, but doesn't block it entirely. Holding, being damaged while holding block or failing a parry will all cost stamina.\
 If you run out of stamina, you can no longer block until it recharges.
+
+*For Support_Slash_Trails, contact Hologlaxer.*
