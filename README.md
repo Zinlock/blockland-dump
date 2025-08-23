@@ -22,29 +22,29 @@ Add-on categories:
 <sub>*Click on an add-on's name to download it*</sub>
 
 ## Clients
-### [Client_BetterMissionEdit](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Client_BetterMissionEdit.zip)
+### [Client_BetterMissionEdit](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Client_BetterMissionEdit.zip)
 <sup>*Originally made for V20. Useless on V21, likely does not work on Rebuilt due to editor differences.*</sup>\
 Adds various useful tools to the Mission Editor, and replaces file select dialogs with nicer ones that feature image previews.
 
-### [Client_ReadFile](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Client_ReadFile.zip)
+### [Client_ReadFile](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Client_ReadFile.zip)
 Adds two console commands to read out the clipboard's contents or an entire file to the server's chat eval.\
 Originally made to work with Anthonyrules144's eval mod, but supports Port's<sup>(?)</sup> eval by passing 1 as the last argument to the commands.\
 
-### [Client_SlayerSaveList](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Client_SlayerSaveList.zip)
+### [Client_SlayerSaveList](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Client_SlayerSaveList.zip)
 Adds a new 'favorites' system to Slayer, allowing you to save more than 10 minigame presets with names.
 
 ## Events
-### [Event_AESpawnAmmo](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Event_AESpawnAmmo.zip)
+### [Event_AESpawnAmmo](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Event_AESpawnAmmo.zip)
 <sup>*Requires [Weapon_AEBase](#Weapon_AEBase).*</sup>\
 Adds an `AESpawnAmmo` event to bricks, which spawns a single ammo drop for the brick's attached item.\
 For example, triggering this on a brick that has an AK-47 attached will cause it to spawn a 7.62 ammo drop.
 
-### [Event_FireRelayPlus](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Event_FireRelayPlus.zip)
+### [Event_FireRelayPlus](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Event_FireRelayPlus.zip)
 Adds various different variations of the fireRelay event.\
 Allows you to trigger relays in a radius and/or on one of 8 specific channels.\
 For example, `fireRelayChannel [Self] [1]` will only trigger `onRelayChannel1` events.
 
-### [Event_KillZone](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Event_KillZone.zip)
+### [Event_KillZone](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Event_KillZone.zip)
 <sup>*Originally made for AlexK's battle royale.*</sup>\
 Adds multiple battle royale shrinking killzone events, as well as a static rectangle killzone for delimiting non-battle royale maps.
 
@@ -82,7 +82,7 @@ Minigame events:
 > `KZLinkLast` - Links the last spawned killzone to this minigame, making it ignore other minigames.\
 > This is not necessary if you only have one default minigame, as killzones affect *all* minigames by default.
 
-### [Event_Loadouts](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Event_Loadouts.zip)
+### [Event_Loadouts](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Event_Loadouts.zip)
 <sup>*Uses events exclusively. If you want a complete, customizable loadout/class system, see [Server_Loadouts](#Server_Loadouts) instead.*</sup>\
 Adds a couple events to create player loadouts for modular spawn rooms.
 
@@ -107,26 +107,26 @@ Brick events:
 > `loadoutCheck [slot]` - Checks if the triggering player has an item in their loadout at `slot`.
 > Triggers `onLoadoutCheckFail` if the `slot` is empty. Otherwise, triggers `onLoadoutCheckSuccess`.
 
-### [Event_MinigameAll](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Event_MinigameAll.zip)
+### [Event_MinigameAll](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Event_MinigameAll.zip)
 Adds a (badly named...) `doPlayerLoop [name]` minigame event that triggers the `onMinigamePlayerLoop` input event for every player in a minigame.\
 Allows you to run player/client events on everyone inside a minigame.\
 If `name` is omitted, the input event is triggered on all bricks.\
 Otherwise, it is only triggered on bricks with a matching name.
 
-### [Event_PrintNear](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Event_PrintNear.zip)
+### [Event_PrintNear](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Event_PrintNear.zip)
 Adds a `printNearby [message] [range] [action] <time>` event to players, bots and bricks, allowing you to display a bottomprint, centerprint or chat message to all players within `range`.\
 `action` indicates which type of message to display, and `time` is ignored if using chat messages.
 
-### [Event_ResAll](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Event_ResAll.zip)
+### [Event_ResAll](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Event_ResAll.zip)
 <sup>*Requires Slayer.*</sup>\
 Adds a `resurrectAll [lives]` minigame event that revives all dead players in the minigame and gives them back `lives`.\
 *Already living players do not get granted any more lives.*
 
-### [Event_ScoreAll](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Event_ScoreAll.zip)
+### [Event_ScoreAll](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Event_ScoreAll.zip)
 Adds a `scoreAll [points]` minigame event that grants `points` to all players inside the minigame.
 
 ## Gamemodes
-### [Gamemode_OxMining](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Gamemode_OxMining.zip)
+### [Gamemode_OxMining](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Gamemode_OxMining.zip)
 <sup>*Requires various, mostly common brick packs.
 Inside gamemode.txt, all addons under the 'Extras' category can be removed and are not necessary (except for Event_onBrickLoadedCarbon?). <sup>(Why can't you just pick modlists in addition to required addons!!!)</sup>\
 If you can't find the addons to run this, contact me.*</sup>\
@@ -138,14 +138,14 @@ This was never rehosted mainly because the save system really needed to be rewri
 I wanted to at least add backups and per-player saves before rehosting, but never got around to doing that...
 
 ## Items
-### [Item_BrickBuilder](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Item_BrickBuilder.zip)
+### [Item_BrickBuilder](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Item_BrickBuilder.zip)
 <sup>*Requires [Server_Resources](#Server_Resources).*</sup>\
 Adds a 'Brick Builder' item that allows players to build destructible defenses.\
 Uses Plastic as a resource to build. Bricks built with this can be destroyed by guns and explosives.\
 Players can undo bricks built with this tool, and bricks drop plastic upon being destroyed.\
 Was originally made for use in a Trench esque gamemode, but never went anywhere.
 
-### [Item_KevlarPlus](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Item_KevlarPlus.zip)
+### [Item_KevlarPlus](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Item_KevlarPlus.zip)
 <sup>*An edit of the old Kevlar Vest item.*</sup>\
 Features three tiers of armor: Light, Medium and Heavy.\
 Adds a `setArmor [type]` player event which automatically mounts a specific `type` of armor to a player, and item versions of each armor type.\
@@ -155,7 +155,7 @@ Upon taking too much damage, the armor breaks.
 Can easily be extended by copy-pasting an existing armor item's code and editing its values.\
 All custom armor types are automatically added to the `setArmor` list.
 
-### [Item_Medical](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Item_Medical.zip)
+### [Item_Medical](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Item_Medical.zip)
 <a name="Item_Medical"></a>
 <sup>*An edit of the old Tier+Tactical<sup>(?)</sup> medical items.*</sup>\
 Features two limited use healing items: the Pills and Medkit, as well as three infinite healing items: the Syringe, Gauze Gun and Stim Gun.\
@@ -167,31 +167,31 @@ I don't think I ever made use of either variant for very long...\
 The syringe and medkit can both also revive players<sup>(?)</sup>.
 
 ## Players
-### [Player_Dasher](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Player_Dasher.zip)
+### [Player_Dasher](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Player_Dasher.zip)
 <sup>*Tumble on hit code by Carbon Zypher/Darksaber, released with permission.*</sup>\
 Adds a 'Dasher' playertype that can right click to perform a short dash in their current movement direction.\
 Crouching before dashing causes them to always dash straight forwards, but costs more energy when dashing away from their movement direction.\
 Hitting a player or vehicle while dashing causes it to tumble and get knocked back.
 
-### [Player_Hidden](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Player_Hidden.zip)
+### [Player_Hidden](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Player_Hidden.zip)
 <sup>*Originally made for my The Hidden server.\
 Requires Selective Ghosting for night vision.*</sup>\
 Adds a 'The Hidden' playertype that is entirely invisible, jumps higher and silently, moves faster and has a night vision light.\
 The Hidden can leap with right click, and regains health and energy by damaging enemies.\
 Its light is much bigger and brighter, and can not be seen by other players.
 
-### [Player_Tribal](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Player_Tribal.zip)
+### [Player_Tribal](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Player_Tribal.zip)
 <sup>*Originally made for my Tribal Warfare server.*</sup>\
 Features three 'Tribal' playertypes: Light (100 HP), Medium (150 HP) and Heavy (200 HP).\
 Each playertype has fuel jets, different movement speeds and a rudimentary "skiing" feature. *Requires [Script_CustomBinds](#Script_CustomBinds) to ski*\
 <sub>*Also features a commented out, bad attempt at making the skiing more useful by boosting players upon landing...*</sub>
 
 ## Scripts
-### [Script_AutoEnvSave](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Script_AutoEnvSave.zip)
+### [Script_AutoEnvSave](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Script_AutoEnvSave.zip)
 <sup>*Requires Support_AutoSaver.*</sup>\
 A simple extension for Support_AutoSaver that saves the current environment settings alongside each autosave.
 
-### [Script_CusHealthBar](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Script_CusHealthBar.zip)
+### [Script_CusHealthBar](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Script_CusHealthBar.zip)
 A customizable health/energy bar mod. The code for this is *atrocious*, and none of the customization options are exposed to commands or BLG prefs...\
 See `prefs.cs` for health bar setting descriptions.\
 Use `/nohealthmod` to disable the health bar entirely for yourself.
@@ -199,22 +199,22 @@ Use `/nohealthmod` to disable the health bar entirely for yourself.
 Features a `setGlobalTarget [bool]` player event that displays that player's health bar to everyone else at all times. Useful for boss battles.\
 If `bool` is unchecked, the player will be unmarked. Only one player can be marked at a time.
 
-### [Script_CustomBinds](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Script_CustomBinds.zip)
+### [Script_CustomBinds](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Script_CustomBinds.zip)
 <a name="Script_CustomBinds"></a>
 <sup>*Originally made for my Tribal Warfare server.*</sup>\
 Allows servers to register custom client keybinds. Required on both the server and client to work.\
 See the bottom of `server.cs` for example usage.
 
-### [Script_DevUtilities](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Script_DevUtilities.zip)
+### [Script_DevUtilities](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Script_DevUtilities.zip)
 A collection of random functions I use for developing mods.\
 All functions below `locateDuplicates` were meant for porting Tribes 2 maps to V20/Rebuilt.\
 This is really just a mess of many completely unrelated functions I didn't feel like making separate mods for. It's just here for posterity.
 
-### [Script_EventDescriptions](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Script_EventDescriptions.zip)
+### [Script_EventDescriptions](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Script_EventDescriptions.zip)
 Adds description tooltips to the event menu. Mods can define custom descriptions on the server side, and any clients with the mod will see them.\
 Features built-in descriptions for most default events as well as some common ones that will display even if the server doesn't have the mod installed.
 
-### [Script_EventFix](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Script_EventFix.zip)
+### [Script_EventFix](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Script_EventFix.zip)
 Adds an SA-only `/eventFix` command that will re-apply every single brick's events. Useful when duplicating large amounts of bricks around causes some events to not be registered properly.\
 Some input events like the `onMinigame...` events sometimes don't register properly when duplicating bricks around, and this command allows you to reapply all of them without having to manually go and wrench every evented brick.
 
@@ -222,24 +222,24 @@ Also features a `/eventCopy [from] [to]` command that allows you to mass copy ev
 <sub>*`/claimBricks` will not work on any named or evented bricks as it doesn't carry ntobject data over. It was meant to be moved to a different add-on.*</sub>\
 <sub>*`/clearNamedBricks [name]` is self explanatory. It was meant to be moved to a different add-on.*</sub>
 
-### [Script_GhostAll](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Script_GhostAll.zip)
+### [Script_GhostAll](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Script_GhostAll.zip)
 Adds a `/ghost` command that forces all objects to be ghosted to you, on a 30 second cooldown.\
 `/ghostAll` is admin only and does the same thing as `/ghost`, but for all connected players.\
 <sub>*`/locateFar [distance]` dumps a list of bricks more than `distance` units away. It was meant to be moved to a different add-on.*</sub>\
 <sub>*`/gotoBrick [id]` teleports you to a specific brick. It was meant to be moved to a different add-on.*</sub>\
 <sub>*`/eventWatch` displays a log of all brick events as they happen, to catch spammers. It was meant to be moved to a different add-on.*</sub>
 
-### [Script_HighVehicleLimit](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Script_HighVehicleLimit.zip)
+### [Script_HighVehicleLimit](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Script_HighVehicleLimit.zip)
 A small script that increases the vehicle limit to 2000. Made because the limit I set in the server settings would never save and it pissed me off...
 
-### [Script_InventorySort](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Script_InventorySort.zip)
+### [Script_InventorySort](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Script_InventorySort.zip)
 <a name="Script_InventorySort"></a>
 Adds a `/invsort` command that pulls up a centerprint menu to reorder your inventory.\
 Useful on battle royales and similar gamemode to reorder weapons without having to drop them.\
 Features a function to package to handle (or prevent) reordering weapons.\
 Transfers over ammo values for Tier Tactical (untested), the [Item_Medical](#Item_Medical) edit, as well as [Weapon_Grenades](#Weapon_Grenades) to avoid ammo duplication tricks.
 
-### [Script_ItemDrops](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Script_ItemDrops.zip)
+### [Script_ItemDrops](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Script_ItemDrops.zip)
 <sup>*Requires Slayer.*</sup>\
 Adds various Slayer minigame settings to control item dropping.
 
@@ -251,17 +251,17 @@ Adds various Slayer minigame settings to control item dropping.
 Adds an admin only `/clearItems` command that deletes all dropped items belonging to the minigame you are in.\
 Also adds a (confusingly named) `/clearAllItems` command that deletes all dropped items.
 
-### [Script_KeepVehicles](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Script_KeepVehicles.zip)
+### [Script_KeepVehicles](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Script_KeepVehicles.zip)
 <sup>*Originally made for my Tribal Warfare server.*</sup>\
 A small script that makes all vehicles stay when their owner leaves the server.\
 Avoids vehicles respawning (or even breaking entirely) in gamemodes when the host leaves.
 
-### [Script_LocalChat](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Script_LocalChat.zip)
+### [Script_LocalChat](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Script_LocalChat.zip)
 A small script that adds proximity text chat. Essentially a watered down roleplay mod, but does not feature RP names.\
 Start your message with ! to yell and @ to whisper.\
 Disabled by default, check preferences to enable and tweak settings.
 
-### [Script_MapReload](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Script_MapReload.zip)
+### [Script_MapReload](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Script_MapReload.zip)
 <sup>*Brick save to file code taken from Support_AutoSaver.*</sup>\
 A custom made autosaver & map rotation system. Originally made for V20 to automatically reload the last played map when starting up a dedicated server (hence the name MapReload), but later revamped to support Rebuilt & V21.\
 Saves the current environment setup alongside your build, and automatically reloads the last save when starting up the server.\
@@ -283,7 +283,7 @@ To set up map rotation:
 
 *Some people have had issues with brick prints being broken when loading a save with this mod, though I have not myself...*
 
-### [Script_Minimap](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Script_Minimap.zip) <sup>[(repo)](https://github.com/Zinlock/Script_Minimap)</sup>
+### [Script_Minimap](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Script_Minimap.zip) <sup>[(repo)](https://github.com/Zinlock/Script_Minimap)</sup>
 <a name="Script_Minimap"></a>
 <sup>*Originally made for my Tribal Warfare server.*</sup>\
 Adds a minimap to the top right of the screen. Required on both the server and client to work.\
@@ -291,37 +291,37 @@ Can be opened up in a full-screen view where you can click on the minimap to pin
 Features a couple preferences to change the minimap's view scale and hide enemy players in minigames.\
 Also includes a few events to display text under the minimap and change the minimap icon of players or display waypoints on bricks and vehicles.
 
-### [Script_NoLightFix](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Script_NoLightFix.zip)
+### [Script_NoLightFix](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Script_NoLightFix.zip)
 A small script that adds a better 'Disable lights' Slayer preference.\
 The default one causes issues with many add-ons that rely on the light key. This one is less intrusive and will not interfere.
 
-### [Script_NoSit](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Script_NoSit.zip)
+### [Script_NoSit](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Script_NoSit.zip)
 A small script that adds 'Disable /sit' and 'Disable crouch sitting' Slayer preferences.\
 The first simply disables sitting entirely, while the latter only prevents sitting while crouching to avoid the 'dry hump' bug.
 
-### [Script_VehicleMinigameFix](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Script_VehicleMinigameFix.zip)
+### [Script_VehicleMinigameFix](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Script_VehicleMinigameFix.zip)
 <sup>*Originally made for my Tribal Warfare server.*</sup>\
 A small script that gives the currently running default minigame ownership of all vehicles.\
 Avoids vehicles becoming unusable when the host leaves.
 
 ## Servers
-### [Server_AdminUtilities](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Server_AdminUtilities.zip)
+### [Server_AdminUtilities](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Server_AdminUtilities.zip)
 A collection of various admin tools to moderate servers (or troll people :D)\
 Features force killing, reviving, admin chat, giving items, build banning, event banning and more.\
 Use `/auhelp` for a list of all available commands.
 
-### [Server_AkimboAnything](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Server_AkimboAnything.zip)
+### [Server_AkimboAnything](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Server_AkimboAnything.zip)
 An old, *extremely* jank mod that allows players to pick up any weapon in their left hand.\
 When enabled, trying to pick up any item with your inventory open will mount it to your left hand, and right clicking will fire it.\
 Unsurprisingly, this tends to look bad and can cause issues especially with ammo-based guns, normal akimbo weapons and two-handed weapons.
 
-### [Server_HatMod](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Server_HatMod.zip)
+### [Server_HatMod](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Server_HatMod.zip)
 <sup>*An edit of the old Hat Mod.\
 Requires Selective Ghosting.*</sup>\
 An edit of Hat Mod that uses bots instead of images to mount hats, allows players to use up to 4 hats at a time, and includes the node hiding system built in.\
 Also supports recoloring hats, but since they were all made out of images, no existing hats support this lol
 
-### [Server_Loadouts](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Server_Loadouts.zip) <sup>[(repo)](https://github.com/Zinlock/Server_Loadouts)</sup>
+### [Server_Loadouts](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Server_Loadouts.zip) <sup>[(repo)](https://github.com/Zinlock/Server_Loadouts)</sup>
 <a name="Server_Loadouts"></a>
 <sup>*Originally made for Pacer's Randomizer DM server, then expanded for Tribal Warfare and Trench CTF.*</sup>\
 A customizable loadout system. Supports preset classes as well as customizable loadouts with class-locked weapons, and a randomizer mode to make players spawn with random loadouts or classes.\
@@ -348,7 +348,7 @@ Player events:
 > `force`: Applies their new loadout if it changed since they last had it applied.
 > `silent`: Hides the centerprint message.
 
-### [Server_Resources](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Server_Resources.zip) <sup>[(repo)](https://github.com/Zinlock/Server_Resources)</sup>
+### [Server_Resources](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Server_Resources.zip) <sup>[(repo)](https://github.com/Zinlock/Server_Resources)</sup>
 <a name="Server_Resources"></a>
 <sup>*Originally made for aebaadcode's Prison Breakout server.*</sup>\
 A resource system that allows players to pick up various scrap items, and adds events to allow crafting with those resources.\
@@ -356,14 +356,14 @@ Adds wood, plastic, metal scrap, ropes, tape, diamonds, glue and more.\
 Resources do not go into the inventory when picked up, and are all dropped on death.\
 Also features resource storage which allows players to stash resources in bricks, and save/load storage contents to a file.
 
-### [Server_SlayerTeamBeacons](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Server_SlayerTeamBeacons.zip)
+### [Server_SlayerTeamBeacons](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Server_SlayerTeamBeacons.zip)
 <a name="Server_SlayerTeamBeacons"></a>
 <sup>*Requires Slayer and Selective Ghosting.*</sup>\
 Adds beacons over players' heads in Slayer minigames to make locating teammates easier in large maps.\
 Includes Slayer team preferences to control beacon visibility.\
 This version *should* work, but I noticed issues with it sometimes showing enemy positions too last time I hosted...
 
-### [Server_Trench](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Server_Trench.zip) <sup>[(repo)](https://github.com/Zinlock/Server_Trench)</sup>
+### [Server_Trench](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Server_Trench.zip) <sup>[(repo)](https://github.com/Zinlock/Server_Trench)</sup>
 <sup>*An edit of the old Trench mod.*</sup>\
 This version of the Trench mod features explosive damage, saving & reloading Trench maps (supported by [Script_MapReload](#Script_MapReload)), picking block colors before building and new models for the tool.\
 I believe the shovel model was made by Radio Star/Nikod?
@@ -380,29 +380,29 @@ The 'Disable Floating Bricks' preference does not work. Float checks were never 
 The 'Explosive Radius Multiplier' preference defaults to `1`, which causes massive holes when blowing up terrain. I recommend running with `0.25`.
 
 ## Sounds
-### [Sound_Tribes2Flags](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Sound_Tribes2Flags.zip)
+### [Sound_Tribes2Flags](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Sound_Tribes2Flags.zip)
 <sup>*Originally made for my Tribal Warfare server.*</sup>\
 Adds the flag pickup, drop, capture and respawn sounds from Tribes 2, alongside a Slayer preference to play them in CTF minigames.
 
 ## Supports
-### [Support_BulletHoles](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Support_BulletHoles.zip)
+### [Support_BulletHoles](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Support_BulletHoles.zip)
 Makes projectile impacts spawn bullet hole decals.\
 I don't know why this is a "support" mod.
 
-### [Support_XStateSys](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Support_XStateSys.zip)
+### [Support_XStateSys](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Support_XStateSys.zip)
 <a name="Support_XStateSys"></a>
 An entirely custom bot weapon state system made for [Weapon_XArena](#Weapon_XArena).\
 States work similarly to the normal image state system, but with a bunch of extra utilities.\
 Does not add any content on its own.
 
 ## Vehicles
-### [Vehicle_AbramsTank](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Vehicle_AbramsTank.zip)
+### [Vehicle_AbramsTank](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Vehicle_AbramsTank.zip)
 <sup>*Originally made for Cordax's Hartham server.\
 Requires [Weapon_AEBase](#Weapon_AEBase).*</sup>\
 The M1 Abrams with a cannon and machine gun, as well as an external M2 Browning gunner seat.\
 Was originally planned to have more than just the Abrams...
 
-### [Vehicle_Tribal](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Vehicle_Tribal.zip) <sup>[(repo)](https://github.com/Zinlock/Vehicle_Tribal)</sup>
+### [Vehicle_Tribal](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Vehicle_Tribal.zip) <sup>[(repo)](https://github.com/Zinlock/Vehicle_Tribal)</sup>
 <sup>*Originally made for my Tribal Warfare server.*</sup>\
 A mostly faithful recreation of every Tribes 2 vehicle.\
 Features a hoverbike, a scout plane with mounted guns, a hover tank with a cannon and machine gun, a bomber plane and a transport plane.
@@ -421,40 +421,40 @@ To set up a vehicle pad:
 		- Unoccupied vehicles will always be destroyed after being left empty for over a minute, except for the Jericho MPB. You can allow other vehicles to remain indefinitely by setting the `vpadNeverTimeOut` datablock field to `true`.
 
 ## Weapons
-### [Weapon_AEBase](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Weapon_AEBase.zip) <sup>[(repo)](https://github.com/Zinlock/Weapon_AEBase)</sup>
+### [Weapon_AEBase](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Weapon_AEBase.zip) <sup>[(repo)](https://github.com/Zinlock/Weapon_AEBase)</sup>
 <a name="Weapon_AEBase"></a>
 A weapon base with a million billion features, made by me and aebaadcode. Does not add any content on its own besides ammo items.\
 Has support for [Script_InventorySort](#Script_InventorySort), ammo is transfered when sorting inventory to avoid ammo duplication tricks.
 
-### [Weapon_AEBase_BreachEnter](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Weapon_AEBase_BreachEnter.zip) <sup>[(repo)](https://github.com/Zinlock/Weapon_AEBase_BreachEnter)</sup>
+### [Weapon_AEBase_BreachEnter](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Weapon_AEBase_BreachEnter.zip) <sup>[(repo)](https://github.com/Zinlock/Weapon_AEBase_BreachEnter)</sup>
 <sup>*Requires [Weapon_AEBase](#Weapon_AEBase).*</sup>\
 A 'remaster' of the old H&K pack, put on AEBase. Features various edits of H&K guns with some entirely new models by ZeUberMedic, all reanimated by me and aebaadcode, with some sounds by Cowtastic.\
 This pack contains around *80 guns.*
 
-### [Weapon_AEBase_Rallypack](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Weapon_AEBase_Rallypack.zip) <sup>[(repo)](https://github.com/Zinlock/Weapon_AEBase_Rallypack)</sup>
+### [Weapon_AEBase_Rallypack](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Weapon_AEBase_Rallypack.zip) <sup>[(repo)](https://github.com/Zinlock/Weapon_AEBase_Rallypack)</sup>
 <sup>*Requires [Weapon_AEBase](#Weapon_AEBase).*</sup>\
 A 'remaster' of Rallypack, put on AEBase. Features various edits of rallypack guns, all reanimated by me, with some sounds by Cowtastic.\
 Was originally planned to be bigger... Most weapons lack ADS.
 
-### [Weapon_AEBase_TranqGun](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Weapon_AEBase_TranqGun.zip)
+### [Weapon_AEBase_TranqGun](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Weapon_AEBase_TranqGun.zip)
 <sup>*Requires [Weapon_AEBase](#Weapon_AEBase) and [Emote_Snore](https://blockland.online/rtb/addons/1135/snore-emote).*</sup>\
 A tranquilizer gun. Puts players to sleep, preventing them from moving, shooting or talking. Spam clicking them, shoving them or damaging them will wake them up.\
 Headshots instantly put them to sleep while body shots have a delayed effect, slowing them before putting them to sleep a couple seconds later.
 
-### [Weapon_AirSupport](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Weapon_AirSupport.zip)
+### [Weapon_AirSupport](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Weapon_AirSupport.zip)
 <sup>*Requires [Vehicle_A10](https://blockland.online/rtb/addons/4107/a-10-thunderbolt-ii).*</sup>\
 Adds an Air Strike Radio item that calls in an A-10 strafing run.
 Was originally planned to have more call-ins...
 
-### [Weapon_Grenades](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Weapon_Grenades.zip) <sup>[(repo)](https://github.com/Zinlock/Weapon_Grenades)</sup>
+### [Weapon_Grenades](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Weapon_Grenades.zip) <sup>[(repo)](https://github.com/Zinlock/Weapon_Grenades)</sup>
 <a name="Weapon_Grenades"></a>
 A pack of 16 different grenades. Adds frag grenades, clusters, molotovs, thermite, flashbangs, smokes, electric grenades, C4 and more.
 
-### [Weapon_Traps](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Weapon_Traps.zip) <sup>[(repo)](https://github.com/Zinlock/Weapon_Traps)</sup>
+### [Weapon_Traps](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Weapon_Traps.zip) <sup>[(repo)](https://github.com/Zinlock/Weapon_Traps)</sup>
 <sup>*Requires [Weapon_Grenades](#Weapon_Grenades).*</sup>\
 A pack of 12 placeable traps as well as a health station and an energy station. Adds anti-personnel and anti-tank mines, proximity mines, bear traps and more.
 
-### [Weapon_TribalWar](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Weapon_TribalWar.zip) <sup>[(repo)](https://github.com/Zinlock/Weapon_TribalWar)</sup>
+### [Weapon_TribalWar](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Weapon_TribalWar.zip) <sup>[(repo)](https://github.com/Zinlock/Weapon_TribalWar)</sup>
 <a name="Weapon_TribalWar"></a>
 <sup>*Originally made for my Tribal Warfare server.
 Requires [Weapon_AEBase](#Weapon_AEBase) and [Weapon_Grenades](#Weapon_Grenades)*</sup>\
@@ -463,7 +463,7 @@ Includes a Repair Gun, mainly for use with turrets and vehicles (though it works
 Also includes an Energy Pack, which makes jet fuel recharge faster. Some items are meant to be used with fuel jet playertypes, and are energy-fed rather than using ammo.\
 The shocklance and charge cannon require a minigame and a valid target to work.
 
-### [Weapon_Turrets](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Weapon_Turrets.zip) <sup>[(repo)](https://github.com/Zinlock/Weapon_Turrets)</sup>
+### [Weapon_Turrets](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Weapon_Turrets.zip) <sup>[(repo)](https://github.com/Zinlock/Weapon_Turrets)</sup>
 <a name="Weapon_Turrets"></a>
 <sup>*Originally made for my Tribal Warfare server.*</sup>\
 A mostly faithful recreation of the Tribes 2 base turrets and assets.\
@@ -499,7 +499,7 @@ Other turret events:
 If [Weapon_TribalWar](#Weapon_TribalWar) is also enabled, it will include 4 more turret types (Mortar, Repair, ELF, Heat Seeker).
 If [Server_Loadouts](#Server_Loadouts) is also enabled, inventory stations will automatically apply player loadouts when used.
 
-### [Weapon_XArena](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/Weapon_XArena.zip)
+### [Weapon_XArena](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Weapon_XArena.zip)
 <a name="Weapon_XArena"></a>
 <sup>*Requires [Support_XStateSys](#Support_XStateSys).*</sup>\
 A very incomplete "pack" of fantasy melee weapons that never went anywhere.\
