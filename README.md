@@ -1,7 +1,7 @@
 # blockland-dump
 A dump of all my most significant blockland mods.\
-Some of these have already been released in the past, but were either left outdated (blg releases) or never had easy download links (aebase)
-Some of these have went untested/unused for multiple years, but should all be fully functional. Hopefully.
+Some of these have already been released in the past, but were either left outdated (blg releases) or never had easy download links (aebase)\
+Some of these also went untested/unused for multiple years, but should all be fully functional. Hopefully.
 
 I am not planning on returning to Blockland, so please don't ask for me to update any of these.\
 Feel free to use any code or assets from any of these for your own mods.
@@ -28,7 +28,7 @@ Adds various useful tools to the Mission Editor, and replaces file select dialog
 
 ### [Client_ReadFile](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Client_ReadFile.zip)
 Adds two console commands to read out the clipboard's contents or an entire file to the server's chat eval.\
-Originally made to work with Anthonyrules144's eval mod, but supports Port's<sup>(?)</sup> eval by passing 1 as the last argument to the commands.\
+Originally made to work with Anthonyrules144's eval mod, but supports Port's<sup>(?)</sup> eval by passing 1 as the last argument to the commands.
 
 ### [Client_SlayerSaveList](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Client_SlayerSaveList.zip)
 Adds a new 'favorites' system to Slayer, allowing you to save more than 10 minigame presets with names.
@@ -267,7 +267,7 @@ A custom made autosaver & map rotation system. Originally made for V20 to automa
 Saves the current environment setup alongside your build, and automatically reloads the last save when starting up the server.\
 Features multiple preferences.\
 Use `/savebricks <name>` or `/sb <name>` to save your build, and `/loadbricks <name>` or `/lb <name>` to load a save.\
-Saving with no name timestamps your save like an autosave, and loading with no name reloads the last save.\
+Saving with no name timestamps your save like an autosave, and loading with no name reloads the last save.
 
 Map rotation system is made for Slayer (but may work with non slayer default minigames), and supports /rtv and map voting.\
 To set up map rotation:
@@ -496,7 +496,7 @@ Other turret events:
 > `turretTurn [angle]` - Rotates the turret by a specific angle in degrees, from -180 to 180. Useful to make stations in corner face directly away from the corner, or to adjust a turret's rotation after mounting it to a wall.\
 > This event is a little jank and can sometimes refuse to turn turrets to specific angles.
 
-If [Weapon_TribalWar](#Weapon_TribalWar) is also enabled, it will include 4 more turret types (Mortar, Repair, ELF, Heat Seeker).
+If [Weapon_TribalWar](#Weapon_TribalWar) is also enabled, it will include 4 more turret types (Mortar, Repair, ELF, Heat Seeker).\
 If [Server_Loadouts](#Server_Loadouts) is also enabled, inventory stations will automatically apply player loadouts when used.
 
 ### [Weapon_XArena](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Weapon_XArena.zip)
