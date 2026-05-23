@@ -299,6 +299,14 @@ The default one causes issues with many add-ons that rely on the light key. This
 A small script that adds 'Disable /sit' and 'Disable crouch sitting' Slayer preferences.\
 The first simply disables sitting entirely, while the latter only prevents sitting while crouching to avoid the 'dry hump' bug.
 
+### [Script_SaveBooster](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Script_SaveBooster.zip)
+A small script that boosts the speed of manual save loading.\
+Can speed up save load times even if the server isn't running the mod.\
+The line count displayed at the end will be incorrect if the script is not enabled on the server, but that is purely visual.
+
+Normally, brick loading runs a command every tick to load a single line of a save file. This is even if that one line is well below the maximum length of 255, and commands are throttled based on how many are sent rather than how much data they contain in total.\
+This mod hijacks the save loading code to stuff as many lines as possible within the command, making use of the entire 255 character limit, and increases how many commands are sent per tick. This can majorly speed up load times as most save file lines are only around 50 characters long.
+
 ### [Script_VehicleMinigameFix](https://github.com/Zinlock/blockland-dump/raw/refs/heads/main/mods/Script_VehicleMinigameFix.zip)
 <sup>*Originally made for my Tribal Warfare server.*</sup>\
 A small script that gives the currently running default minigame ownership of all vehicles.\
